@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+
+		<link rel="stylesheet" href="./css/jquery-ui.css" />
+		<!-- <script src="./js/jquery-ui.js"></script> -->
+
+		<script type="text/javascript" src="./js/jquery-1.10.2.js" ></script>
+		<script type="text/javascript" src="./js/calendar.js" ></script>
+		<script type="text/javascript" src="./js/event-pool.js" ></script>
+		<link rel="stylesheet" type="text/css" href="./css/calendar.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/event-pool.css"/>
+		<script type="text/javascript">
+			// $(document).ready(function(){
+			// for (var i = 0; i<5; i++){
+			// console.log("try " + i);
+			// }
+			// });
+			$(document).ready(initCalendar);
+			$(document).ready(initEventRoll);
+		</script>
+		<title>index</title>
+	</head>
+	<body>
+		<div id="content" >
+			<div id="calendar">
+				<div id="event_pool"></div>
+				<div id="pictures_of_events"></div>
+				<div id="control_bar"></div>
+				<div id="dayHeaders"></div>
+				<div id="calendar_days"></div>
+			</div>
+		</div>
+		<!-- <div id="dialog" title="Basic dialog">
+			<p>
+				This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.
+			</p>
+		</div> -->
+	</body>
+</html>
