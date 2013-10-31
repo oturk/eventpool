@@ -8,9 +8,9 @@
 
 		<script type="text/javascript" src="./js/jquery-1.10.2.js" ></script>
 		<script type="text/javascript" src="./js/calendar.js" ></script>
-		<script type="text/javascript" src="./js/event-pool.js" ></script>
+		<script type="text/javascript" src="./js/eventpool.js" ></script>
 		<link rel="stylesheet" type="text/css" href="./css/calendar.css"/>
-		<link rel="stylesheet" type="text/css" href="./css/event-pool.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/eventpool.css"/>
 		<script type="text/javascript">
 			// $(document).ready(function(){
 			// for (var i = 0; i<5; i++){
@@ -18,7 +18,9 @@
 			// }
 			// });
 			$(document).ready(initCalendar);
-			$(document).ready(initEventRoll);
+			var eventpool = new EventPool();
+			$(document).ready(eventpool.init);
+			// $(document).ready(initEventRoll);
 		</script>
 		<title>index</title>
 	</head>
